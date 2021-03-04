@@ -40,6 +40,7 @@ SELECT COUNT(DISTINCT actor_o_actriz) FROM reparto;
 
 --8. Indicar las películas estrenadas entre los años 1990 y 1999 (ambos incluidos) ordenadas por título de manera ascendente.
 SELECT ano_de_estreno, pelicula FROM peliculas WHERE ano_de_estreno>=1990 AND ano_de_estreno<=1999 ORDER BY pelicula ASC; 
+--BETWEEN 1990 AND 1999
 
 --9. Listar el reparto de las películas lanzadas el año 2001.
 SELECT peliculas.ano_de_estreno, peliculas.pelicula, reparto.actor_o_actriz FROM reparto 
